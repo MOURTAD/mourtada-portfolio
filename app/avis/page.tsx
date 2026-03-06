@@ -6,7 +6,7 @@ type Review = {
   name: string;
   role: string;
   text: string;
-  category: "Club" | "Restauration" | "Projet";
+  category: "Club" | "Restauration" | "Projet" | "hackathon";
 };
 
 const reviews: Review[] = [
