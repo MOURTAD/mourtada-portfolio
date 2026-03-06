@@ -1,110 +1,117 @@
 export default function Home() {
   return (
     <main className="bg-background text-foreground">
-     <section
+    <section
   id="home"
-  className="mx-auto max-w-5xl px-5 pt-7 pb-6 flex items-center"
+  className="max-w-6xl mx-auto px-4 pt-10 pb-16 md:pt-14 md:pb-24"
 >
-  <div className="w-full grid gap-8 md:gap-10 md:grid-cols-2 md:items-center">
+  <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
     {/* LEFT */}
-    <div className="space-y-3">
-      <p className="text-xs uppercase tracking-[0.25em] opacity-70">
+    <div className="order-1 max-w-2xl">
+      <p className="text-[10px] sm:text-xs uppercase tracking-[0.28em] opacity-70 mb-3">
         Welcome to my world 👋
       </p>
 
-      <h1 className="text-8xl md:text-3xl font-semibold leading-tight">
-         je m'appelle 
-        <span className="underline underline-offset-8 decoration-foreground/30">
-           Mourtada
+      <h1 className="text-4xl leading-tight font-semibold sm:text-5xl lg:text-6xl">
+        Je m&apos;appelle{" "}
+        <span className="underline underline-offset-4 lg:underline-offset-8">
+          Mourtada
         </span>
-        "
+        ,
       </h1>
 
-      <p className="text-base md:text-lg opacity-80">
-      Étudiant en M1 Informatique à 
-        <span className="font-medium"> l’Université Côte d’Azur.</span>.
+      <p className="mt-4 text-lg sm:text-xl lg:text-2xl opacity-85 leading-snug">
+        Étudiant en M1 Informatique à l&apos;Université Côte d&apos;Azur.
       </p>
 
-      {/* Alternance  */}
-      <div className="relative">
-        <div className="pointer-events-none absolute -inset-2 rounded-3xl bg-gradient-to-br from-foreground/10 via-transparent to-foreground/10 blur-2xl opacity-70" />
-        <div className="relative rounded-3xl border border-foreground/15 bg-background/80 p-5 md:p-6 shadow-sm">
-          <div className="flex items-center justify-between gap-3">
-            <p className="text-xs font-semibold uppercase tracking-[0.25em] opacity-70">
-              Alternance
-            </p>
-            <span className="text-xs px-3 py-1 rounded-full border border-foreground/15 bg-foreground/5 opacity-80">
-            Disponible
-            </span>
-          </div>
+      <p className="mt-3 text-sm sm:text-base opacity-70 leading-relaxed max-w-xl">
+        Je construis des expériences digitales modernes et utiles en combinant
+        UI/UX Design, Web Development, AI et Réseaux.
+      </p>
 
-          <h2 className="mt-1 text-lg md:text-xl font-semibold">
-          À la recherche d'une alternance 
-          </h2>
-
-          <p className="mt-2 text-sm opacity-75">
-          Je souhaite rejoindre une équipe pour travailler sur des projets liés au design, au développement web, à l’IA ou aux réseaux, et contribuer de manière concrète à un produit.
-          </p>
-
-          <div className="mt-4 grid gap-2 text-sm">
-            <div className="flex justify-between gap-3">
-              <span className="opacity-60">Domaines</span>
-              <span className="font-medium text-right">
-              Conception · UI/UX · Web Development · AI · Réseaux 
-              </span>
-            </div>
-            <div className="flex justify-between gap-3">
-              <span className="opacity-60">Durée</span>
-              <span className="font-medium text-right">1 an</span>
-            </div>
-            <div className="flex justify-between gap-3">
-              <span className="opacity-60">Rythme</span>
-              <span className="font-medium text-right">
-                3J univ / 2J entreprise
-              </span>
-            </div>
-            <div className="flex justify-between gap-3">
-              <span className="opacity-60">Localisation</span>
-              <span className="font-medium text-right">
-                Nice · Sophia Antipolis · Remote-friendly
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* CTA À LA FIN */}
-      <div className="pt-2 flex flex-wrap items-center gap-3">
+      <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
         <a
-          href="/MOURTADA_CV.pdf"
-          className="px-5 py-2 rounded-full text-sm font-medium border border-foreground/20 bg-foreground text-background hover:opacity-90 transition"
+          href="/CV-MOURTADA-ESSADIK-ENNOUNI.pdf"
+          download
+          className="inline-flex items-center justify-center px-5 py-3 rounded-full text-sm font-medium border border-foreground/20 bg-foreground text-background hover:opacity-90 transition"
         >
           Télécharger mon CV
         </a>
 
         <a
           href="#contact"
-          className="px-5 py-2 rounded-full text-sm font-medium border border-foreground/20 bg-background hover:bg-foreground/5 transition"
+          className="inline-flex items-center justify-center px-5 py-3 rounded-full text-sm font-medium border border-foreground/20 bg-background hover:bg-foreground/5 transition"
         >
           Me contacter
         </a>
       </div>
+
+      <p className="mt-3 text-xs sm:text-sm opacity-60">
+        Disponible pour une alternance : Nice · Sophia · Remote-friendly
+      </p>
     </div>
 
-    {/* RIGHT: photo cute */}
-    <div className="flex justify-center ">
-      <div className="relative">
-        <div className="pointer-events-none absolute -inset-3 rounded-[2rem] bg-gradient-to-b from-foreground/10 via-transparent to-foreground/10 blur-2xl opacity-70" />
-        <div className="rounded-[2rem]  border-foreground/15 bg-background/60 p-3">
-          <div className="aspect-[2.5/4] w-[250px] overflow-hidden rounded-2xl">
-            <img
-              src="/ada.jpeg"
-              alt="Photo de Mourtada"
-              className="h-full w-full object-cover"
-            />
+    {/* RIGHT */}
+    <div className="order-2 flex flex-col items-center gap-5 lg:items-end">
+      {/* PHOTO */}
+      <div className="rounded-3xl border border-foreground/15 bg-background/60 p-3 w-fit shadow-sm">
+        <div className="w-[180px] sm:w-[220px] lg:w-[250px] overflow-hidden rounded-2xl">
+          <img
+            src="/ada.jpeg"
+            alt="Photo de Mourtada"
+            className="w-full h-auto object-cover"
+          />
+        </div>
+      </div>
+
+      {/* ALTERNANCE */}
+      <div className="w-full max-w-[420px] rounded-3xl border border-foreground/15 bg-background/80 p-4 sm:p-5 shadow-sm">
+        <div className="flex items-center justify-between gap-3">
+          <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.25em] opacity-70">
+            Alternance
+          </p>
+
+          <span className="text-[10px] sm:text-xs px-3 py-1 rounded-full border border-foreground/15 bg-foreground/5 opacity-80 whitespace-nowrap">
+            Disponible
+          </span>
+        </div>
+
+        <h2 className="mt-2 text-lg sm:text-xl font-semibold leading-snug">
+          À la recherche d&apos;une alternance
+        </h2>
+
+        <p className="mt-2 text-sm opacity-75 leading-relaxed">
+          Je souhaite rejoindre une équipe pour travailler sur des projets liés
+          au design, au développement web, à l’IA ou aux réseaux, et contribuer
+          de manière concrète à un produit.
+        </p>
+
+        <div className="mt-4 space-y-3 text-sm">
+          <div className="flex flex-col gap-1 sm:flex-row sm:justify-between sm:gap-4">
+            <span className="opacity-60">Domaines</span>
+            <span className="font-medium break-words sm:text-right sm:max-w-[70%]">
+              Conception · UI/UX · Web Development · AI · Réseaux
+            </span>
           </div>
 
-          
+          <div className="flex flex-col gap-1 sm:flex-row sm:justify-between sm:gap-4">
+            <span className="opacity-60">Durée</span>
+            <span className="font-medium sm:text-right">1 an</span>
+          </div>
+
+          <div className="flex flex-col gap-1 sm:flex-row sm:justify-between sm:gap-4">
+            <span className="opacity-60">Rythme</span>
+            <span className="font-medium sm:text-right">
+              3J univ / 2J entreprise
+            </span>
+          </div>
+
+          <div className="flex flex-col gap-1 sm:flex-row sm:justify-between sm:gap-4">
+            <span className="opacity-60">Localisation</span>
+            <span className="font-medium break-words sm:text-right sm:max-w-[70%]">
+              Nice · Sophia Antipolis · Remote-friendly
+            </span>
+          </div>
         </div>
       </div>
     </div>
