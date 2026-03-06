@@ -696,7 +696,7 @@ export default function Home() {
 
         {/* Name + role */}
         <div>
-          <p className="text-sm font-medium">Ahmed</p>
+          <p className="text-sm font-medium">Tassenime</p>
           <p className="text-[11px] opacity-60">
             Membre – Club étudiant
           </p>
@@ -705,8 +705,8 @@ export default function Home() {
 
       {/* Quote */}
       <p className="mt-4 text-sm opacity-80 leading-relaxed">
-        “Toujours force de proposition sur le design et la communication du
-        club, avec une vraie créativité et un bon sens du détail.”
+      "He is a serious and active member. I had the chance to work with him in clubs and hackathons, where he demonstrated responsibility, leadership, and strong teamwork skills."
+   
       </p>
     </div>
 
@@ -718,16 +718,15 @@ export default function Home() {
         </div>
 
         <div>
-          <p className="text-sm font-medium">Sarah</p>
+          <p className="text-sm font-medium">Amine</p>
           <p className="text-[11px] opacity-60">
-            Collègue – Restauration
+            Leader – Club
           </p>
         </div>
       </div>
 
       <p className="mt-4 text-sm opacity-80 leading-relaxed">
-        “Capable de rester calme et efficace même dans des situations de
-        forte pression, avec un vrai esprit d’équipe.”
+        “Président impliqué et structuré, il savait fédérer l’équipe, prendre des décisions claires et maintenir une bonne communication entre les pôles. La collaboration était fluide et efficace.”
       </p>
     </div>
 
@@ -739,7 +738,7 @@ export default function Home() {
         </div>
 
         <div>
-          <p className="text-sm font-medium">Yanis</p>
+          <p className="text-sm font-medium">Zineb</p>
           <p className="text-[11px] opacity-60">
             Projet académique
           </p>
@@ -747,8 +746,7 @@ export default function Home() {
       </div>
 
       <p className="mt-4 text-sm opacity-80 leading-relaxed">
-        “Il cherche toujours à comprendre le besoin avant de proposer une
-        solution, avec une approche sérieuse et structurée.”
+      Collaborateur fiable et engagé, il a su s’intégrer parfaitement au travail d’équipe et apporter une réelle valeur au projet."
       </p>
     </div>
 

@@ -17,12 +17,6 @@ const reviews: Review[] = [
     category: "Club",
   },
   {
-    name: "Amina",
-    role: "Membre d’une équipe de hackathon",
-    text: "He is a serious and active member. I had the chance to work with him in clubs and hackathons, where he demonstrated responsibility, leadership, and strong teamwork skills.",
-    category: "hackathon",
-  },
-  {
     name: "Zineb",
     role: "Collaborateur projet académique",
     text: "Collaborateur fiable et engagé, il a su s’intégrer parfaitement au travail d’équipe et apporter une réelle valeur au projet.",
@@ -46,7 +40,7 @@ const reviews: Review[] = [
     name: "Aya",
     role: "Membre d’une équipe projet",
     text: "Nous avons eu le plaisir de travailler ensemble au sein de la même équipe lors de notre projet académique de troisième année. Il s’est distingué par son sérieux et sa vigilance, étant toujours informé non seulement de ses propres tâches mais aussi de celles des autres membres de l’équipe. Il respectait les délais tout en fournissant un travail de grande qualité. Ouvert aux critiques et aux retours, il cherchait constamment à s’améliorer, participait activement aux discussions lors des réunions et apportait des idées et des suggestions pertinentes.",
-    category: "Restauration",
+    category: "Projet",
   },
   {
     name: "Latrache",
@@ -60,12 +54,7 @@ const reviews: Review[] = [
     text: "As the Ex-President of the Ingeniums club, I quickly recognized his strong leadership potential from the moment he joined. He consistently demonstrated a high sense of responsibility, excellent teamwork and communication skills, adaptability, and a proactive mindset, making him both a reliable collaborator and a natural leader.",
     category: "Restauration",
   },
-  {
-    name: "Karim",
-    role: "Collègue en restauration",
-    text: "Sérieux, poli et efficace. Il garde une bonne énergie même pendant les services chargés.",
-    category: "Restauration",
-  },
+  
 ];
 
 const categories: Array<"Tous" | Review["category"]> = ["Tous", "Club", "Projet", "Restauration"];
