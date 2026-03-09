@@ -26,7 +26,7 @@ export default function Home() {
 
       <p className="mt-3 text-sm sm:text-base opacity-70 leading-relaxed max-w-xl">
         Je construis des expériences digitales modernes et utiles en combinant
-        UI/UX Design, Web Development, AI et Réseaux.
+        Conception , UI/UX Design, Web Development et AI 
       </p>
 
       <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
@@ -90,7 +90,7 @@ export default function Home() {
           <div className="flex flex-col gap-1 sm:flex-row sm:justify-between sm:gap-4">
             <span className="opacity-60">Domaines</span>
             <span className="font-medium break-words sm:text-right sm:max-w-[70%]">
-              Conception · UI/UX · Web Development · AI · Réseaux
+              Conception · UI/UX · Web Development · AI 
             </span>
           </div>
 
@@ -767,8 +767,8 @@ export default function Home() {
               Me contacter
             </h2>
             <p className="mt-2 text-sm md:text-base opacity-75">
-              Intéressé par mon profil pour une alternance en design, frontend
-              ou réseaux ? N&apos;hésitez pas à m&apos;écrire, je réponds dès
+              Intéressé par mon profil pour une alternance en Conception, UI/UX design, Web dev
+              ou AI ? N&apos;hésitez pas à m&apos;écrire, je réponds dès
               que possible.
             </p>
 
